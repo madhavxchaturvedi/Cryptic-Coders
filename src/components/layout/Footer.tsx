@@ -13,8 +13,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section with Logo */}
-          <div>
-            <div className="flex items-center space-x-3 mb-4">
+          <div className="text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
               <div className="w-12 h-12 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center border border-purple-500/20">
                 <img 
                   src="/src/assets/logos/club-logo.png" 
@@ -26,12 +26,12 @@ const Footer = () => {
                   }}
                 />
               </div>
-              <h3 className="text-2xl font-bold gradient-text">Cryptic Coders</h3>
+              <h3 className="text-xl sm:text-2xl font-bold gradient-text">Cryptic Coders</h3>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-sm sm:text-base">
               Empowering students through code, collaboration, and innovation at F.E.T. Agra College.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
@@ -49,14 +49,14 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {['Home', 'About', 'Team', 'Events', 'Contact'].map((link) => (
                 <li key={link}>
                   <a
                     href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
-                    className="text-gray-400 hover:text-purple-400 transition-colors"
+                    className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base"
                   >
                     {link}
                   </a>
@@ -66,12 +66,12 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-lg font-semibold text-white mb-4">Get in Touch</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-2 justify-center md:justify-start">
                 <FaEnvelope className="text-purple-400 mt-1 flex-shrink-0" />
-                <a href="mailto:crypticcoder2025@gmail.com" className="hover:text-purple-400 transition-colors">
+                <a href="mailto:crypticcoder2025@gmail.com" className="hover:text-purple-400 transition-colors break-all">
                   crypticcoder2025@gmail.com
                 </a>
               </li>

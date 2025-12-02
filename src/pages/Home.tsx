@@ -134,7 +134,7 @@ const Home = () => {
             }}
           >
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 tracking-tight px-2"
               initial={{ opacity: 0, y: 20, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.8, ease: 'easeOut' }}
@@ -156,7 +156,7 @@ const Home = () => {
             </motion.h1>
 
             <motion.div
-              className="text-xl md:text-3xl lg:text-4xl mb-8 font-light h-14 md:h-16 flex items-center justify-center"
+              className="text-lg sm:text-xl md:text-3xl lg:text-4xl mb-6 sm:mb-8 font-light h-12 sm:h-14 md:h-16 flex items-center justify-center px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -174,7 +174,7 @@ const Home = () => {
             </motion.div>
 
             <motion.p
-              className="text-base md:text-lg lg:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed px-4"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
@@ -183,11 +183,11 @@ const Home = () => {
               <span className="text-purple-400 font-semibold"> problem solvers</span>, and 
               <span className="text-indigo-400 font-semibold"> tech enthusiasts</span>.
               <br />
-              <span className="text-gray-400 text-sm md:text-base mt-2 block">Together, we learn, build, and shape the future.</span>
+              <span className="text-gray-400 text-xs sm:text-sm md:text-base mt-2 block">Together, we learn, build, and shape the future.</span>
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center px-4"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4 sm:px-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
@@ -200,7 +200,7 @@ const Home = () => {
                     y: -5,
                   }}
                   whileTap={{ scale: 0.95, y: 0 }}
-                  className="px-8 py-4 rounded-full text-white font-bold text-base w-full sm:w-auto relative overflow-hidden group"
+                  className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold text-sm sm:text-base w-full sm:w-auto relative overflow-hidden group"
                   style={{
                     background: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
                     boxShadow: '0 10px 40px rgba(124, 58, 237, 0.3), 0 0 40px rgba(139, 92, 246, 0.2)',
@@ -231,7 +231,7 @@ const Home = () => {
                     y: -5,
                   }}
                   whileTap={{ scale: 0.95, y: 0 }}
-                  className="px-8 py-4 rounded-full text-white font-bold text-base border-2 border-violet-500/50 w-full sm:w-auto backdrop-blur-xl bg-violet-500/5 transition-all duration-300"
+                  className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold text-sm sm:text-base border-2 border-violet-500/50 w-full sm:w-auto backdrop-blur-xl bg-violet-500/5 transition-all duration-300"
                   style={{
                     boxShadow: '0 10px 30px rgba(139, 92, 246, 0.2)',
                   }}
@@ -298,15 +298,15 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={statsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16 px-4"
           >
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent mb-3 sm:mb-4">
               Our Impact in Numbers
             </h2>
-            <p className="text-gray-400 text-lg">Building a thriving community of innovators</p>
+            <p className="text-gray-400 text-base sm:text-lg">Building a thriving community of innovators</p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
@@ -327,19 +327,19 @@ const Home = () => {
                 {/* Animated gradient border */}
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-75 blur-sm transition-opacity duration-500" />
                 
-                <div className="relative bg-gray-900/90 backdrop-blur-xl border border-violet-500/20 group-hover:border-violet-500/40 p-8 rounded-2xl text-center transition-all duration-300">
+                <div className="relative bg-gray-900/90 backdrop-blur-xl border border-violet-500/20 group-hover:border-violet-500/40 p-4 sm:p-6 md:p-8 rounded-2xl text-center transition-all duration-300">
                   <motion.div 
-                    className="text-5xl text-violet-400 mb-4 flex justify-center"
+                    className="text-3xl sm:text-4xl md:text-5xl text-violet-400 mb-3 sm:mb-4 flex justify-center"
                     whileHover={{ scale: 1.15, rotate: 5 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
                     {stat.icon}
                   </motion.div>
-                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent mb-2">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent mb-1 sm:mb-2">
                     {statsInView && <CountUp end={parseInt(stat.value)} />}
                     {stat.value.includes('+') && '+'}
                   </div>
-                  <div className="text-gray-400 text-sm font-medium">{stat.label}</div>
+                  <div className="text-gray-400 text-xs sm:text-sm font-medium">{stat.label}</div>
                 </div>
               </motion.div>
             ))}

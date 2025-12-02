@@ -37,10 +37,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Club Logo & Name */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-purple-500/10 to-violet-500/10 flex items-center justify-center border border-purple-500/30"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden bg-gradient-to-br from-purple-500/10 to-violet-500/10 flex items-center justify-center border border-purple-500/30"
             >
               <img 
                 src="/src/assets/logos/club-logo.png" 
@@ -48,11 +48,11 @@ const Navbar = () => {
                 className="w-full h-full object-cover scale-125"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.parentElement!.innerHTML = '<span class="text-2xl font-bold gradient-text">&lt;/&gt;</span>';
+                  e.currentTarget.parentElement!.innerHTML = '<span class="text-xl sm:text-2xl font-bold gradient-text">&lt;/&gt;</span>';
                 }}
               />
             </motion.div>
-            <span className="text-xl font-bold text-white">Cryptic Coders</span>
+            <span className="text-lg sm:text-xl font-bold text-white">Cryptic Coders</span>
           </Link>
 
           {/* Desktop Navigation */}
